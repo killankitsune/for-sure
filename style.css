@@ -1,0 +1,22 @@
+:root{
+  --bg:#fff;
+  --card-bg:#fff8e6;
+  --accent:#ff6b6b;
+  --text:#222;
+}
+*{box-sizing:border-box}body{
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+  background:linear-gradient(180deg,#f7fbff, #fff);
+  margin:0;
+  color:var(--text);
+  padding:2rem;
+}
+.container{max-width:640px;margin:0 auto}label{display:block;margin:0.6rem 0;font-size:0.95rem}input,textarea,select{width:100%;padding:0.5rem;border-radius:6px;border:1px solid #ddd}
+.actions{display:flex;gap:0.5rem;margin-top:0.8rem}button{padding:0.6rem 0.9rem;border:0;background:var(--accent);color:#fff;border-radius:6px;cursor:pointer}button[disabled]{opacity:0.6;cursor:not-allowed}.card{
+  margin-top:1rem;
+  padding:1.2rem;
+  border-radius:10px;
+  background:var(--card-bg);
+  box-shadow:0 6px 18px rgba(0,0,0,0.07);
+}
+.hidden{display:none}#link-output{width:calc(100% - 90px);padding:0.5rem;border:1px dashed #ccc;border-radius:6px}#copy-btn{background:#2b8aef}
