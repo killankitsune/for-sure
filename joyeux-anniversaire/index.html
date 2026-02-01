@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Joyeux anniversaire 🎉</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Créer une carte d'anniversaire</h1>
+
+    <form id="card-form">
+      <label>
+        Nom du destinataire
+        <input name="name" id="name" placeholder="Ex : Marie" />
+      </label>
+
+      <label>
+        Message
+        <textarea name="message" id="message" rows="4" placeholder="Ex : Joyeux anniversaire !"></textarea>
+      </label>
+
+      <label>
+        Thème
+        <select id="theme" name="theme">
+          <option value="classic">Classique</option>
+          <option value="party">Fête</option>
+          <option value="pastel">Pastel</option>
+        </select>
+      </label>
+
+      <div class="actions">
+        <button type="button" id="preview-btn">Aperçu</button>
+        <button type="button" id="share-btn">Générer un lien partageable</button>
+      </div>
+    </form>
+
+    <section id="preview" class="card hidden" aria-live="polite"></section>
+
+    <div id="share-link" class="hidden">
+      <p>Lien généré :</p>
+      <input id="link-output" readonly />
+      <button id="copy-btn">Copier</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
